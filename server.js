@@ -89,12 +89,6 @@ app.delete('/api/recipes/:id', (req, res) => {
   });
 });
 
-setInterval(function () {
-  http.get("http://m-recipes.herokuapp.com", (res) => {
-    console.log('ping')
-  });
-}, 1200000);
-
 app.listen(port, () => {
   console.log(`server up on port: ${port}`)
 });
